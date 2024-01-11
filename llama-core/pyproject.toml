@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "llama-core"
+version = "0.1.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "llama/core"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.3"
+langchain = {version = ">=0.0.303"}
+pydantic = "<2.0.0"
+deprecated = ">=1.2.9.3"
+fsspec = ">=2023.5.0"
+llama-vector-stores-simple = { path = "../llama-vector-stores/llama-vector-stores-simple"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
